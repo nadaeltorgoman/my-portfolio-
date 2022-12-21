@@ -1,0 +1,118 @@
+img {
+  text-align:center;
+  display: block;
+  margin: auto;
+  height: 300px;
+  border-radius: 15px 0 15px 0;
+  
+}
+.flip-box {
+  margin: auto;
+  background-color: transparent;
+  width: 215.24px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  text-align: center;
+  border-radius: 15px 0 15px 0;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  text-align: center;
+}
+
+.flip-box:hover .flip-box-inner {
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px 0 15px 0;
+}
+
+.flip-box-front {
+  text-align: center;
+  background-color: #bbb;
+  color: black;
+  border-radius: 15px 0 15px 0;
+}
+
+.flip-box-back {
+  text-align: center;
+  background-color: DarkMagenta;
+  color: PeachPuff;
+  transform: rotateY(180deg);
+}
+h3{
+  transform: translate(1%,400%);
+}
+h5{
+  transform: translate(1%,500%);;
+}
+p{
+  border-color: blueviolet;
+    text-align:center;
+    color: rgb(252, 250, 251);
+    border: 2px solid rgb(230, 179, 176);
+    padding: 30px;
+    margin: 30px 50px;
+    background-color: rgba(56, 2, 36, 0.445);
+
+}
+h1 {
+    color: rgb(237, 89, 135);
+  }
+
+
+  body {
+    background-image: url(astronaut.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    margin: 0;
+    backdrop-filter: brightness(0.5);
+    padding: 20px;
+  }
+.foot
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.foot .share
+{
+    margin: 15px;
+    
+}
+.foot .share a
+{
+    font-size: 40px;
+    padding-left: 30px;
+    color:PapayaWhip;
+    line-height: 2rem;
+    border-radius: 20%;
+    margin:1rem;
+    text-decoration: none;
+} 
+.foot .share a:hover
+{
+    font-size: 3rem;
+    color:Fuchsia;
+    transition: 0.3s linear;
+}
